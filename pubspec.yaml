@@ -76,11 +76,11 @@ flutter:
   # example:
 
   fonts:
-    - family: Roboto
+    - family: Jost
       fonts:
-        - asset: fonts/Roboto-Medium.ttf
+        - asset: fonts/Jost-Medium.ttf
           weight: 400
-        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Jost-Regular.ttf
           weight: 500
 
   #
