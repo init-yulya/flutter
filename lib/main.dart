@@ -11,6 +11,17 @@ void main() {
   ));
 }
 
+const String name = "SARA AIBAROVA";
+const String number = ' N53016132';
+const String citizenship = 'Казахстан';
+const String birthplace = 'Казахстан';
+const String birthDate = "23.04.1994";
+const String gender = "Женщина";
+const String dateOfIssue = "03.09.2003";
+const String validUntil = "02.09.2016";
+const String issuedOf = "MINISTER OF INTERNAL AFFAIRS";
+const String iin = "010708651268";
+
 class Profile extends StatefulWidget {
 
   @override
@@ -61,7 +72,7 @@ class _ProfileState extends State<Profile> {
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             children: [
                                               SizedBox(height: 20.0 ),
-                                                  Text("SARA AIBAROVA",
+                                                  Text(name,
                                                     style: TextStyle(
                                                       fontSize: 17.0,
                                                       fontWeight: FontWeight.w500,
@@ -70,7 +81,7 @@ class _ProfileState extends State<Profile> {
                                                   ),
                                                 SizedBox(height: 20.0,width: 20.0,),
                                                 RoundedBackgroundText(
-                                                  ' N53016132',
+                                                  number,
                                                   style: const TextStyle(fontSize: 15.0,
                                                     height: 1.5,
                                                     fontWeight: FontWeight.w500,
@@ -97,7 +108,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("Казахстан",
+                                                        Text(citizenship,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
@@ -119,7 +130,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("Казахстан",
+                                                        Text(birthplace,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
@@ -142,7 +153,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("23.04.1994",
+                                                        Text(birthDate,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
@@ -171,7 +182,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("Женщина",
+                                                        Text(gender,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
@@ -193,7 +204,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("03.09.2003",
+                                                        Text(dateOfIssue,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
@@ -215,7 +226,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("02.09.2016",
+                                                        Text(validUntil,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
@@ -244,7 +255,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("MINISTER OF INTERNAL AFFAIRS",
+                                                        Text(issuedOf,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),),
@@ -266,7 +277,7 @@ class _ProfileState extends State<Profile> {
                                                             fontSize: 13.0,
                                                             color: AppColors.subtitleColor,
                                                           ),),
-                                                        Text("010708651268",
+                                                        Text(iin,
                                                           style: TextStyle(
                                                             fontSize: 15.0,
                                                           ),)
