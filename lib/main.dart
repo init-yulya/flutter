@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/colors.dart';
-import 'package:first_app/rounded_background_text.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -79,15 +78,21 @@ class _ProfileState extends State<Profile> {
                                                         height: 1.5,
                                                     ),
                                                   ),
-                                                SizedBox(height: 20.0,width: 20.0,),
-                                                RoundedBackgroundText(
-                                                  number,
-                                                  style: const TextStyle(fontSize: 15.0,
-                                                    height: 1.5,
-                                                    fontWeight: FontWeight.w500,
+                                                SizedBox(height: 20.0,width: 12.0,),
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: AppColors.borderColor,
+                                                    borderRadius: BorderRadius.circular(10),
                                                   ),
-                                                  backgroundColor: AppColors.borderColor,
-                                                  outerRadius: 18.0,
+                                                  padding: const EdgeInsets.fromLTRB(10, 3.5, 10, 3.5),
+                                                  child: Text(
+                                                    number,
+                                                    style: TextStyle(
+                                                      color: AppColors.mainColor, fontSize: 15.0,
+                                                      //height: 1.5,
+                                                      fontWeight: FontWeight.w500,
+                                                    ),
+                                                  ),
                                                 ),
                                             ],
                                           ),
@@ -170,7 +175,7 @@ class _ProfileState extends State<Profile> {
                                             mainAxisAlignment: MainAxisAlignment.start,
                                             children: [
                                               Expanded(
-                                                flex: 3, // takes 30% of available width
+                                                flex: 3,
                                                 child:  Row(
                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                   children: [
